@@ -10,7 +10,7 @@ spec:
     matchLabels:
       app.kubernetes.io/name: $T-Project$
       app.kubernetes.io/instance: $T-Service$
-  replicas: 2
+  replicas: 1
   template:
     metadata: 
       labels:
