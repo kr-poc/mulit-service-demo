@@ -42,6 +42,9 @@ func hello(w http.ResponseWriter, req *http.Request) {
 
 	fmt.Fprintf(w, "hello, my name is service1~\n")
 }
+func hellohere(w http.ResponseWriter, req *http.Request) {
+	fmt.Fprintf(w, "hello, my name is service1~\n")
+}
 
 func headers(w http.ResponseWriter, req *http.Request) {
 
