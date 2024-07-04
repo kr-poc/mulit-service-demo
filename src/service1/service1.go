@@ -28,13 +28,6 @@ func connect()  {
   url := "login=" + user + "&passwd=" + password
 }
 
-var (
-  ip   = "192.168.12.42"
-  port = 3333
-)
-
-SocketClient(ip, port)
-
 func add(x, y int) int {
 	return x + y // Noncompliant
 	z := x + y // dead code
