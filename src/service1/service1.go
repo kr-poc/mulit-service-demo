@@ -21,6 +21,13 @@ import (
 	"net/http"
 )
 
+func connect()  {
+  user := "root"
+  password:= "supersecret" // Sensitive
+
+  url := "login=" + user + "&passwd=" + password
+}
+
 var (
   ip   = "192.168.12.42"
   port = 3333
