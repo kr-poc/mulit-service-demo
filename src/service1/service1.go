@@ -40,6 +40,11 @@ func add(x, y int) int {
 	z := x + y // dead code
 }
 
+func subtraction(x, y int) int {
+	return x - y // Noncompliant
+	z := x - y // dead code
+}
+
 func hello(w http.ResponseWriter, req *http.Request) {
 
 	fmt.Fprintf(w, "hello, my name is service1~\n")
