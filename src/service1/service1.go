@@ -21,8 +21,28 @@ import (
 	"net/http"
 )
 
+func connect()  {
+  user := "root"
+  password:= "supersecret" // Sensitive
+
+  url := "login=" + user + "&passwd=" + password
+}
+
+func add(x, y int) int {
+	return x + y // Noncompliant
+	z := x + y // dead code
+}
+
+func subtraction(x, y int) int {
+	return x - y // Noncompliant
+	z := x - y // dead code
+}
+
 func hello(w http.ResponseWriter, req *http.Request) {
 
+	fmt.Fprintf(w, "hello, my name is service1~\n")
+}
+func hellohere(w http.ResponseWriter, req *http.Request) {
 	fmt.Fprintf(w, "hello, my name is service1~\n")
 }
 
