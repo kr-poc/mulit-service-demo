@@ -2,7 +2,7 @@
 
 ``` bash
 ├── Dockerfile # Dockerfile，也可以作为 Dockerfile 模板，构建镜像时需要通过 --build-arg service=<值> 指定 service 参数的值
-├── Makefile # 构建工程文件，构建时使用 make build-service* 即可
+├── Makefile # 构建工程文件，构建时使用 make build-service 即可
 ├── base-chart # Helm Chart 模板，可用于使用模板批量创建服务
 ├── full-charts # 多个 Helm Chart，service1、service2、service3 分别有完整独立的 Helm Chart 配置
 ├── general-chart # Helm Chart 模板，不可用于使用模板批量创建服务
